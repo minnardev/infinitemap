@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.minnar.infinitemap.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MapStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

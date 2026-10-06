@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "infinitemap",
+  "version": "1.0.0",
+  "name": "Infinite Map",
+  "description": "Расширенный радиус обновления заполненных карт за пределами расстояния прорисовки.",
+  "authors": ["minnar"],
+  "contact": {
+    "homepage": "https://github.com/minnardev"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.minnar.infinitemap.InfiniteMapMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.16.x"
+  },
+  "mixins": [
+    "infinitemap.mixins.json"
+  ]
+}
