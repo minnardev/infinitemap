@@ -1,39 +1,39 @@
 # Infinite Map
 
-Fabric мод для Minecraft 1.16.5, который делает заполненную карту по-настоящему бесконечной. Карта автоматически центрируется на игроке и обновляется в радиусе до 1000 блоков, даже если эти чанки находятся за пределами дальности прорисовки.
+A Fabric mod for Minecraft 1.16.5 that makes Filled Maps behave like truly infinite maps. The map automatically centers on the player and updates in a radius of up to 1000 blocks, even when those chunks are outside the normal render distance.
 
-## Что делает
+## What it does
 
-- **Непрерывное обновление** — при выходе за пределы края карты она не остаётся пустой, а подтягивает новые данные
-- **Автоцентрирование** — центр карты каждый тик следует за игроком, поэтому при полёте на элитре или быстрой езде карта всегда показывает актуальный район
-- **Расширенный сканируемый радиус** — мод периодически подгружает чанки в радиусе 1000 блоков вокруг игрока, чтобы минимизировать пустые зоны
+- **Continuous updates** — when you walk past the edge of the map, it does not stay blank; it pulls in new terrain data instead
+- **Auto-centering** — the map center follows the player every tick, so while flying with an elytra or moving fast the map always shows the area around you
+- **Extended scan radius** — the mod preloads chunks in a 1000-block spiral around the player to reduce empty zones
 
-## Установка
+## Installation
 
-1. Установи **Fabric Loader 0.14+** и **Fabric API 0.42+** для Minecraft 1.16.5
-2. Скачай `infinitemap-1.0.0.jar` из [релизов](../../releases)
-3. Положи файл в папку `mods/`
-4. Запусти игру
+1. Install **Fabric Loader 0.14+** and **Fabric API 0.42+** for Minecraft 1.16.5
+2. Download `infinitemap-1.0.0.jar` from [releases](../../releases)
+3. Drop it into your `mods/` folder
+4. Launch the game
 
-## Требования
+## Requirements
 
 - Minecraft 1.16.5
 - Fabric Loader 0.14+
 - Fabric API 0.42+
 - Java 8
 
-## Сборка из исходников
+## Building from source
 
 ```bash
 ./gradlew build
 ```
 
-Готовый jar появится в `build/libs/infinitemap-1.0.0.jar`.
+The output jar will be in `build/libs/infinitemap-1.0.0.jar`.
 
-## Ограничения
+## Limitations
 
-Обновление карты за пределами дальности прорисовки зависит от `view-distance` на сервере. Если на сервере стоит маленький рендер-дистанс, карта может оставаться пустой далеко от игрока, даже с этим модом. В таком случае нужны изменения на стороне сервера.
+Map updates beyond render distance depend on the server's `view-distance`. If the server uses a small view distance, the map may still show empty areas far from the player even with this mod. That requires a server-side change.
 
-## Лицензия
+## License
 
 MIT
